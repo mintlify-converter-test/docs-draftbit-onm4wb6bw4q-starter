@@ -1,0 +1,102 @@
+---
+title: "Title goes here"
+description: "Description goes here"
+---
+Components are used to build the user interface (UI) of your app. Each [Screen](/docs/screen)
+ and [Block](/docs/custom-blocks)
+ has its own set of components which comprise its UI. Draftbit comes with many different types of components that can be combined, customized, and styled to make your app uniquely yours, including layout containers, text and buttons, form inputs, media players, maps, swipers, and more!
+
+## Component Tree
+
+The [component tree](/docs/introduction-to-the-builder#left-panel)
+ is a list representation of the components that exist on a selected [Screen](/docs/screen)
+ or [Block](/docs/custom-blocks)
+
+Components added to Screens and Blocks are stacked vertically from top to bottom, just as they appear in the component tree. Components can also be reordered and nested using drag-and-drop in the component tree.
+
+[Flex Layout](/docs/layout)
+ can be used to further layout nested groups of components, inside a [View](/docs/view)
+ for example, to build complex user interfaces.
+
+## Adding components
+
+*   From the [top section of the left panel](/docs/introduction-to-the-builder#left-pa)
+    , select the [Screen](/docs/screen)
+     or [Block](/docs/custom-blocks)
+     that you want to add the component to
+*   Click the `+` icon at the top of the [component tree](/docs/introduction-to-the-builder#left-panel)
+     to open the component picker and view all the available components
+*   Click on a component to add to an instance of that component to the Screen or Block
+
+The same process can be used to add a component as a child of another component which accepts child components, such as a [View](/docs/view)
+. Simply select the parent component instead of the Screen component in the component tree before picking a new component to add.
+
+## Moving components
+
+Drag-and-drop components within the component tree to reorder them on the Screen or within their parent component. The blue line displayed in the component tree indicates the location where the component will be dropped.
+
+## Nesting components
+
+Some components, such as a [View](/docs/view)
+, can contain one or more child components. Drag-and-drop components into parent components within the component tree to nest them. The component will highlighted blue to indicate where the component will be dropped.
+
+## Duplicating components
+
+If you simply want to duplicate an existing component and its child components on the same [Screen](/docs/screen)
+ or [Block](/docs/custom-blocks)
+, in the [component tree](/docs/introduction-to-the-builder#left-panel)
+ hover over the component you'd like to duplicate, click the overflow menu (three dots) on the right, then select **Duplicate**.
+
+The duplicate will be added below the component which was duplicated in the component tree.
+
+## Copy/pasting components
+
+You can also copy components from one Screen or Block and paste them into another Screen or Block.
+
+In the [component tree](/docs/introduction-to-the-builder#left-panel)
+ hover over the component you'd like to copy, click the overflow menu (three dots) on the right, and then click **Mark For Copy**.
+
+You'll see an indicator at the bottom of the component tree that shows you there's a component marked for copy. Clicking on the component name will take you to the component you originally selected, and clicking **Unmark** will deselect the indicated component.
+
+Once your component is copied, you can then paste it into another Screen or Block by selecting the parent component in the component tree where you'd like to place the copy, opening the overflow menu, and clicking **Paste "\[Name of Component\]"**
+
+## Hiding components
+
+To hide a component, click on the component's icon in the [component tree](/docs/introduction-to-the-builder#left-panel)
+
+When a component is hidden, the component _and its children_ will not be rendered on the [Screen](/docs/screen)
+ or included in the generated source code.
+
+> ## ❗️
+> 
+> Hiding [Custom Code](/docs/custom-code-components)
+>  components might result in red screens, so be careful!
+
+## Deleting components
+
+In the [component tree](/docs/introduction-to-the-builder#left-panel)
+ you can click the overflow menu (three dots) for the component you'd like to delete and then click **Delete**.
+
+## Restoring components
+
+It's possible to restore deleted components on a Screen. You can view all the deleted components using the icon at the top of the [component tree](/docs/introduction-to-the-builder#left-panel)
+ and restore them as needed.
+
+## Converting to Blocks
+
+Components can be converted into [Saved Blocks](/docs/custom-blocks)
+ so that you can reuse them throughout your app while only needing to make changes in once place when you want to make an update.
+
+Check out the [Saved Blocks](/docs/custom-blocks)
+ doc for more details.
+
+## Conditional Display
+
+You can conditionally display a component based on a given condition (e.g. a variable's value). Learn more about conditionally displaying components in the [Conditional Display](/docs/conditional-display)
+ doc.
+
+Did this page help you?
+
+Yes
+
+No
