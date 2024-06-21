@@ -1,0 +1,47 @@
+---
+title: "Assets Panel"
+description: "Uploading images in the Builder"
+---
+You can open the Assets panel from the [left menu bar](/docs/introduction-to-the-builder#left-bar)
+ in the Builder. Here you're able to upload your own images to use in your app project. Any `.png`, `.jpg`, `.jpeg`, or `.gif` file can be uploaded. The size of the file should not exceed `5 Mb`.
+
+## Images
+
+![1200](https://files.readme.io/5857cc7-assets.jpg "5fad5be-CleanShot_2021-10-04_at_22.55.56.jpg")
+
+### How to prepare images for upload
+
+*   Optimize your images to decrease loading time and increase your app's performance. There are a variety of tools around the web like [compressor.io](https://compressor.io/)
+     and [imageoptim](https://imageoptim.com/mac)
+     that can help with this. Or you can use an image hosting service, like [Cloudinary](https://cloudinary.com)
+    , that lets you serve optimized and edited images on demand.
+*   Make sure the file name doesn't include special characters like: `,`, `;`, `"`, `'`, `&`, `$`, `^`. etc. Feel free to use hyphens and underscores.
+*   Make sure the file name starts with a letter
+*   Avoid using long, alphanumeric file names. Instead, it's best to make the image file name descriptive.
+
+### Generating images using OpenAI's DALL·E
+
+You can generate images using AI from within the Assets panel. To generate an image, click the **Generate Image** button in the top bar of the Assets panel.
+
+Here you can select a model and image size then type in your prompt. Once you click **Generate** we'll send your request to OpenAI. When the image is returned, you can choose to save it to your project assets by giving it a name and clicking **Save to Assets**.
+
+| Model | Description | Image Sizes |
+| --- | --- | --- |
+| **DALL·E 2** | The previous DALL·E model released in Nov 2022. The 2nd iteration of DALL·E with more realistic, accurate, and 4x greater resolution images than the original model. | 1024×1024  512×512  256×256 |
+| **DALL·E 3** | The latest DALL·E model released in Nov 2023. DALL·E 3 understands significantly more nuance and detail than the previous systems, allowing you to easily translate your ideas into exceptionally accurate images. | 1024x1024  1024x1792  1792x1024 |
+
+Each subscription plan will have a set number of images which can be generated per month. If you'd like to generate images beyond this limit, you can enter your own [OpenAI API key](https://platform.openai.com/api-keys)
+ in the **Integrations** section for the [Settings](/docs/settings)
+ of your app project.
+
+![](https://files.readme.io/2349b55-86b4c76-integrations_settings.webp)
+
+> ## ⚠️
+> 
+> Images with larger dimensions cost more to generate. Also, DALL·E 3 costs more than DALL·E 2. Keep this in mind when you are using your own OpenAI API key. [See OpenAI pricing here.](https://openai.com/pricing)
+
+Did this page help you?
+
+Yes
+
+No
