@@ -1,91 +1,78 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "docs-draftbit",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/regular.png",
+    "light": "/logo/inverted.png"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#5a45ff",
+    "light": "#432bff",
+    "dark": "#5a45ff",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#5a45ff",
+      "to": "#432bff"
     }
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Go faster with experts →",
+      "url": "https://draftbit.com/experts"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Get started for free →",
+    "url": "https://draftbit.com#"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
+  "tabs": [],
   "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://draftbit.com/blog"
     }
   ],
+  "modeToggle": {
+    "default": "dark"
+  },
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Components",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "components/intro-to-components",
+        "components/screen",
+        "components/icon",
+        "components/text",
+        "components/view"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Welcome",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "welcome/welcome-to-draftbit",
+        "welcome/dashboard",
+        "welcome/workspace-and-billing",
+        "welcome/community-resources",
+        "welcome/faqs"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Introduction to Builder",
       "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "introduction-to-builder/introduction-to-the-builder",
+        "introduction-to-builder/assets",
+        "introduction-to-builder/settings",
+        "introduction-to-builder/environments",
+        "introduction-to-builder/live-preview",
+        "introduction-to-builder/console-logs",
+        "introduction-to-builder/keyboard-shortcuts"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/draftbit",
+    "github": "https://github.com/draftbit",
+    "facebook": "https://www.facebook.com/draftbit/"
   }
 }
