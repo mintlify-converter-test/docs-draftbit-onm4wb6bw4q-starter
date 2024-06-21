@@ -1,0 +1,59 @@
+---
+title: "Console Log in Draftbit"
+description: "Debugging tool to see errors and log data during development"
+---
+Similar to the browser console, Draftbit's Console Log let's you see errors and log data during development. It's used as a debugging tool and will display logs for the embedded [previews](/docs/live-preview)
+ as well as when previewing on a physical device.
+
+You can pass values, such as the result of an [Action](/docs/assigning-actions)
+ or a [Variable](/docs/variables)
+, and it will be printed to the console log. The console logs are located in the [bottom drawer of the Builder](/docs/introduction-to-the-builder#bottom-drawer)
+. Any errors resulting from your [Custom Code](/docs/custom-code-component)
+ or [Imported Packages](/docs/custom-packages)
+ will also be logged here.
+
+> ## ⚠️Not available in Draft Preview
+> 
+> Console Logs are only viewable when your Draftbit app is being previewed using [Web, iOS, and Android previews](/docs/live-preview)
+> .
+
+> ## ❗️Remove any console logs before publishing your app
+> 
+> Make sure to remove any `console.log()` statements in your app's [Custom Code](/docs/custom-code-component)
+> , and remove or disable any [Console Log Actions](/docs/assigning-actions)
+> , when you are preparing to publish your app.
+> 
+> These statements can cause performance and security issues in your production app. [Reference](https://reactnative.dev/docs/performance#using-consolelog-statements)
+> .
+
+## Using Log to Console Action
+
+You can log any data you need to the console using the [Log to Console Action](/docs/assigning-actions#log-to-console)
+. The results of the Log to Console action are shown in the **Console Logs** tab in the [bottom drawer of the Builder](/docs/introduction-to-the-builder#bottom-drawer)
+.
+
+## Console Log statements in Custom Code
+
+You can use a `console.log()` statement in your [Functions](/docs/custom-functions)
+ or [Files](/docs/custom-files)
+ to see them logged in the **Console Logs** tab in the bottom drawer of the Builder.
+
+In the example below, there is a Custom Code Component defined as follows:
+
+```javascript
+import React from 'react';
+import { Text } from 'react-native';
+
+export const MyComponent = () => {
+  console.log('Console statement inside Custom Code Component triggered!');
+
+  return <Text>Hello world!</Text>;
+};
+
+```
+
+Did this page help you?
+
+Yes
+
+No
